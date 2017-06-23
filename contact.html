@@ -3,12 +3,50 @@
 <title>
 Contact Details
 </title>
+<meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<style>
+body {
+    background-image: url("http://virtusindia.com/images/interior_portfolio/HospitalView.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	height:100%;
+	width:100%;
+}
+</style>
 </head>
-<body><div align="center">
-<font color="red"><h1>Contact Information</h1></font></div>
-<form method="POST" ><br>
- <div align="center">PatientName: <input type="text" name="Patientname" size="15" placeholder="patientname" id="name" /><br><br>
- Phonenumber: <input type=" number" name="phonenumber" size="10" placeholder="number" id="phno" />
+<body>
+<div class="navbar navbar-inverse navbar-static-top">
+<div class="container">
+<a href="#" class="navbar-brand">TamilNadu's Best Speciality Hospital</a>
+<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeadercollapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="collapse navbar-collapse navHeadercollapse">
+<ul class="nav navbar-nav navbar-right">
+<li ><a href="hosp.html">Home</a></li>
+<li><a href="doctors.html">Doctors</a></li>
+<li><a href="#">Infrastructure</a></li>
+<li><a href="about.html">AboutUs</a></li>
+<li class="active"><a href="#">contacts</a></li>
+<li><a href="#">Patient Care</a></li>
+<li><a href="https://paytm.com/">paytm</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div align="center">
+<font color="black"><h1>Contact Information</h1></font></div>
+<form method="POST" ><br><br><br><br><br>
+ <div align="center"><h4>PatientName: <input type="text" name="Patientname" size="15" placeholder="PatientName" id="name" /></h4>
+ <h4>Phonenumber: <input type=" number" name="phonenumber" size="10" placeholder="Number" id="phno" /></h4>
  </div><br><br>
  <div align="center">
    <p><input type="submit" onclick="validate();" value="Login" /></p><br>
@@ -19,9 +57,24 @@ Contact Details
        function validate()
        {
            if(document.getElementById("name").value=="" || document.getElementById("phno").value=="")
-               alert("enter all feilds");
+               alert("please enter all details");
        }
    </script>
+    <address><h4 align="center"><font color="black">
+Written by Manoj<br>
+Visit us at:<br><a href="#">
+www.aishwaryahospital.com</a><br>Main Office:<br>
+Box:23,Raman Street<br>Vadapalani<br>chennai<br>TamilNadu<br>Phone Number:<br>2234 5676<br>9900567894</h4></font>
 
+</address> 
+<ul class="pagination">
+  <li ><a href="hosp.html">1</a></li>
+  <li ><a href="doctors.html">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="about.html">4</a></li>
+  <li class="active"><a href="#">5</a></li>
+  <li><a href="#">6</a></li>
+  <li><a href="https://paytm.com/">7</a></li>
+</ul>
    </body>
    </html>
