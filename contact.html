@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+Contact Details
+</title>
+</head>
+<body><div align="center">
+<font color="red"><h1>Contact Information</h1></font></div>
+<form method="POST" ><br>
+ <div align="center">PatientName: <input type="text" name="Patientname" size="15" placeholder="patientname" id="name" /><br><br>
+ Phonenumber: <input type=" number" name="phonenumber" size="10" placeholder="number" id="phno" />
+ </div><br><br>
+ <div align="center">
+   <p><input type="submit" onclick="validate();" value="Login" /></p><br>
+ </div>
+</form>
+       </center></p>
+   <script>
+       function validate()
+       {
+           if(document.getElementById("name").value=="" || document.getElementById("phno").value=="")
+               alert("enter all feilds");
+       }
+   </script>
+
+   </body>
+   </html>
